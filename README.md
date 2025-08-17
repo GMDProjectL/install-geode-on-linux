@@ -2,5 +2,7 @@
 
 ## Run using `wget`:
 ```bash
-wget -O- https://github.com/GMDProjectL/install-geode-on-linux/raw/refs/heads/main/run.sh | bash
+wget https://github.com/GMDProjectL/install-geode-on-linux/releases/download/binary/installer -O /tmp/install-geode
+chmod +x /tmp/install-geode
+/tmp/install-geode
 ```
