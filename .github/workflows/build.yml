@@ -14,8 +14,8 @@ jobs:
             
         - name: Install build dependencies
           run: |
-            sudo apt update && sudo apt upgrade
-            sudo apt install -y make cmake gcc build-essentials git
+            sudo apt update
+            sudo apt install -y make cmake gcc build-essential git
             git clone https://github.com/microsoft/vcpkg --recursive --depth=1
             cd vcpkg
             ./bootstrap-vcpkg.sh -disableMetrics
